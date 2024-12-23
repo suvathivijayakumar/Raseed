@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IH-Billing Software</title>
+  <link rel="icon" href="logo.png">
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #eaf3fc; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      position: relative;
+      width: 400px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .logo {
+        position: absolute;
+        top: -30px;
+        left: 47%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 60px;
+        background-color: #fff;
+        border: 3px solid #eaf3fc;
+        border-radius: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container h2 {
+        margin-top: 60px; 
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+        }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .form-group-half {
+      display: flex;
+      flex-direction: column;
+      width: calc(50% - 5px); 
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    input, select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .form-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .form-checkbox input {
+      margin: 0;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .container a {
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    
+    .one{
+        text-align: center;
+        font-size: 13px;
+        
+    }
+
+    a{
+        text-decoration: none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="logo">
+      <img src="resize-17347845211275243376raseedapplogo.png" alt="Logo">
+    </div>
+
+ 
+    <h2>Create Account</h2>
+
+    <form>
+   
+      <div class="form-row">
+        <div class="form-group-half">
+          <label>Full Name</label>
+          <input type="text">
+        </div>
+
+        <div class="form-group-half">
+          <label>Email Address</label>
+          <input type="email">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group-half">
+          <label>Phone Number</label>
+          <input type="tel" placeholder=" 🇮🇳 +91">
+        </div>
+
+        <div class="form-group-half">
+          <label>Company Name</label>
+          <input type="text">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group-half">
+          <label>Country</label>
+          <select>
+            <option value="">Select Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+          </select>
+        </div>
+
+        <div class="form-group-half">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+      </div>
+
+      
+      
+      <div class="form-checkbox">
+        <input type="checkbox">
+        <label for="terms">I accept the terms and conditions</label>
+      </div>
+
+   
+      <button type="submit" class="btn">Signup</button>
+
+      <div class="one">Already have an account?
+         <a href="index.html">Login Now</a>
+        </div>
+
+    </form>
+  </div>
+</body>
+</html>
